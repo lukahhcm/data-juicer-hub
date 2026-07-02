@@ -19,7 +19,7 @@ Yaliang Li<sup>3</sup>
 
 [![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github)](https://github.com/lukahhcm/data-juicer-hub/tree/CDR-Bench)
 [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-Hugging%20Face-blue)](https://huggingface.co/datasets/lukahh/CDR-Bench)
-[![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-B31B1B.svg?logo=arxiv&logoColor=white)](https://arxiv.org/)
+[![arXiv](https://img.shields.io/badge/arXiv-2606.31435-B31B1B.svg?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2606.31435)
 
 </div>
 
@@ -97,7 +97,7 @@ Links:
 
 - Code: [https://github.com/lukahhcm/data-juicer-hub/tree/CDR-Bench](https://github.com/lukahhcm/data-juicer-hub/tree/CDR-Bench)
 - Dataset: [https://huggingface.co/datasets/lukahh/CDR-Bench](https://huggingface.co/datasets/lukahh/CDR-Bench)
-- Paper: [arXiv link coming soon](https://arxiv.org/)
+- Paper: [https://arxiv.org/abs/2606.31435](https://arxiv.org/abs/2606.31435)
 
 The Hugging Face dataset exposes two configs, each with a `test` split:
 
@@ -803,6 +803,13 @@ scripts/stop_vllm.sh
 If you use CDR-Bench, please cite the paper:
 
 ```bibtex
-
-
+@misc{huang2026cdrbenchevaluatingfaithfulexecution,
+      title={CDR-Bench: Evaluating Faithful Execution of Compositional, Order-Sensitive Data Refinement Recipes}, 
+      author={Yuchen Huang and Xiang Li and Zhenqing Ling and Sijia Li and Qianli Shen and Daoyuan Chen and Yi R. Fung and Yaliang Li},
+      year={2026},
+      eprint={2606.31435},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2606.31435}, 
+}
 ```
