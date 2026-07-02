@@ -761,6 +761,16 @@ packaging for evaluating LLM data-refinement capabilities. Users should consult
 and comply with the terms of the upstream datasets when using CDR-Bench,
 especially for non-academic, commercial, or redistribution use cases.
 
+## License
+
+The CDR-Bench code is released under the Apache 2.0 License.
+
+The CDR-Bench dataset is released for non-commercial academic research use.
+Because the benchmark is constructed from multiple upstream datasets, users must
+also comply with the original licenses and terms of the corresponding source
+datasets. In cases where an upstream dataset imposes stricter terms, those terms
+take precedence for the derived subset.
+
 ## Scripts
 
 Scripts are grouped by function. The root-level scripts are compatibility
