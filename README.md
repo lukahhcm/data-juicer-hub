@@ -738,6 +738,29 @@ The semantic-extension figure summarizes the average atomic RS@3,
 compositional RS@3, and the resulting composition gap for PII redaction,
 hallucination processing, safety tagging, and rubric scoring.
 
+## Data Sources and Attribution
+
+CDR-Bench is built upon or references several open-source and research datasets.
+We thank the original authors and dataset maintainers for making these resources
+available.
+
+| Source dataset | Upstream license / terms | Use in CDR-Bench |
+| --- | --- | --- |
+| [ai4privacy/pii-masking-400k](https://huggingface.co/datasets/ai4privacy/pii-masking-400k) | Custom academic, non-commercial terms; see the source dataset license | Adapted for the PII semantic redaction extension |
+| [nutrientdocs/DocPII-redaction-benchmark](https://huggingface.co/datasets/nutrientdocs/DocPII-redaction-benchmark) | MIT | Used in the main benchmark construction for document-level PII redaction settings |
+| [nvidia/Nemotron-PII](https://huggingface.co/datasets/nvidia/Nemotron-PII) | CC BY 4.0 | Used in the main benchmark construction for order-sensitive privacy filtering tasks |
+| [TIGER-Lab/arxiv-latex-5T](https://huggingface.co/datasets/TIGER-Lab/arxiv-latex-5T) | Apache 2.0 | Used in the main benchmark construction for LaTeX refinement settings |
+| [fava-uw/fava-data](https://huggingface.co/datasets/fava-uw/fava-data) | CC BY 4.0 | Adapted for hallucination detection and correction |
+| [nvidia/Aegis-AI-Content-Safety-Dataset-2.0](https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0) | CC BY 4.0 | Re-processed for safety tagging composition tasks |
+| [nvidia/HelpSteer2](https://huggingface.co/datasets/nvidia/HelpSteer2) | CC BY 4.0 | Re-processed for rubric scoring composition tasks |
+
+The original datasets remain the property of their respective owners. CDR-Bench
+adds additional processing, including operator mining over unordered operator
+sets, composition recipe alignment, prompt materialization, and benchmark
+packaging for evaluating LLM data-refinement capabilities. Users should consult
+and comply with the terms of the upstream datasets when using CDR-Bench,
+especially for non-academic, commercial, or redistribution use cases.
+
 ## Scripts
 
 Scripts are grouped by function. The root-level scripts are compatibility
